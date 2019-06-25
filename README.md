@@ -1,1 +1,1 @@
-# The repo contenst files for a static website of Rajan Jha.
+# The repo contains files for a static website of Rajan Jha.
