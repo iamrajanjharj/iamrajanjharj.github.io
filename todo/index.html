@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+    
+    <title>TODO List</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <h1 style="font-weight: bold;color: tomato;">TODO List</h1>
+        </center><br>
+        <hr color="gray" size="1"><br>
+        <div class="addTask">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Add a task">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button"><b> + </b></button>
+                </div>
+            </div>
+        </div>
+
+        <ol class="ongoing">
+            <h3>On Going Tasks</h3>
+        </ol>
+
+        <ol class="completed">
+            <h3>Completed Tasks</h3>
+        </ol>
+    </div>
+
+    <script>
+
+        var task_field = document.querySelector('input');
+        var add_button = document.querySelector('.input-group-append > button');
+
+        add_button.addEventListener('click', addList);
+        task_field.addEventListener('keyup', (e) => {
+            
+            if(e.keyCode === 13)
+                addList(e);
+            else
+                null;
+        })
+
+        function addList(e) {
+            var ongoing = document.querySelector('.ongoing');
+            var completed = document.querySelector('.completed');
+
+            var newTask = document.createElement('li');
+            var checkButton = document.createElement('button');
+            var delButton = document.createElement('button');
+
+            checkButton.innerHTML = '<i class="fa fa-check"></i>';
+            delButton.innerHTML = '<i class="fa fa-trash"></i>';
+
+
+            if (task_field.value !== '') {
+                newTask.textContent = task_field.value;
+                task_field.value = '';
+                ongoing.appendChild(newTask);
+                newTask.appendChild(checkButton);
+                newTask.appendChild(delButton);
+            }
+
+            checkButton.addEventListener('click', function () {
+                var parent = this.parentNode;
+                parent.remove();
+                completed.appendChild(parent);
+                checkButton.style.display = 'none';
+            });
+
+            delButton.addEventListener('click', function () {
+                var parent = this.parentNode;
+                parent.remove();
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
