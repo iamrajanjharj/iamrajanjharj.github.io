@@ -4,11 +4,115 @@
 <head>
     <meta charset="UTF-8">
 
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
 
-    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        .container {
+            position: relative;
+            max-width: 800px;
+            padding: 10px;
+            margin: 50px auto;
+        }
+
+        .addTask {
+            width: 100%;
+            display: flex;
+            padding: 10px 0;
+        }
+
+        .addTask>input[type="text"] {
+            width: 90%;
+            color: #333;
+            background: none;
+            padding: 10px;
+            font-size: 22px;
+            outline: none;
+        }
+
+        .addTask button {
+            margin: 0 10px;
+            background: #222;
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .ongoing,
+        .completed {
+            margin: 5px 0;
+            padding: 20px;
+        }
+
+        h3 {
+            font-size: 28px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #000;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: cnt;
+        }
+
+        ol li {
+            width: 100%;
+            padding: 18px;
+            margin: 5px 0;
+            background: #e96969bb;
+            font-size: 22px;
+            counter-increment: cnt;
+        }
+
+        ol.completed li {
+            background: #00ff62;
+        }
+
+        ol li::before {
+            content: counter(cnt);
+            background: #231381;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: inline-block;
+            line-height: 2rem;
+            text-align: center;
+            color: #fff;
+            margin-right: 0.5rem;
+        }
+
+        li button {
+            float: right;
+            padding: 5px;
+            font-size: 28px;
+            line-height: 28px;
+            margin-right: 15px;
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+
+
     <title>TODO List</title>
 
 </head>
@@ -23,7 +127,7 @@
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Add a task">
                 <div class="input-group-append">
-                  <button class="btn btn-primary" type="button"><b> + </b></button>
+                    <button class="btn btn-primary" type="button"><b> + </b></button>
                 </div>
             </div>
         </div>
@@ -44,8 +148,8 @@
 
         add_button.addEventListener('click', addList);
         task_field.addEventListener('keyup', (e) => {
-            
-            if(e.keyCode === 13)
+
+            if (e.keyCode === 13)
                 addList(e);
             else
                 null;
