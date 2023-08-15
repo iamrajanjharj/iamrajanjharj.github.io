@@ -1,116 +1,212 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Rajan Jha</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio Website" />
+    <meta name="author" content="Rajan Jha" />
+    <meta name="keywords"
+          content="Rajan Jha, Jha Rajan, Er. Rajan Jha,
+        Rajan Jha Programmer, Rajan Jha NIT, Rajan Jha Website, Rajan Jha software, Rajan Jha Allahabad" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <title>Rajan Jha</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link rel="icon" href="connect.png" type="image/gif" sizes="16x16">
-	
-	<link href="https://fonts.googleapis.com/css?family=Cuprum|Permanent+Marker|Satisfy&display=swap" rel="stylesheet">
-		
-	<style>
-		body,html
-		{
-			  height: 100%;
-			  margin: 0;
-			  background-image: url(rsz_send2.jpg);
-    			  background-position: center;
-    			  background-size: cover;
-        		  background-repeat: no-repeat;
-		}
-
-		#contact
-		{
-			background-color: transparent;
-			border-radius: 7px;
-			z-index: 2;
-			position: absolute;
-			right: 3%;
-			top: 5%;
-			color: #333333;
-			font-family: sans-serif;
-			padding: 10px;
-		}
-
-		#info
-		{
-			background: rgba(51,51,51,0.5);
-			border-radius: 7px;
-			z-index: 2;
-			width: 30%;
-			color: white;
-			position: absolute;
-			left: 3%;
-			top: 5%;
-			font-family: cursive;
-			padding: 10px;		
-		}
-		@media only screen and (max-width: 450px) {
-		  #info {
-		    top: 0;
-		    left: 0;
-		    padding: 2px;
-	 	    width: 100%;
-		  }
-			
-		 #contact
-			{
-				top: 40%;
-			}
-		}
-
-		a
-		{
-			color: #333333;
-			text-decoration: none;
-		}
-
-		a:hover
-		{
-			text-decoration: underline;
-		}
-		
-		.dr
-		{
-			font-size: 90%;
-			text-decoration: none;
-			color: #00fff8;
-		}
-		
-		.dr:hover
-		{
-			text-decoration: underline;
-		}
-		
-	</style>
-	
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
 </head>
-<body>
-	
-<div id="info">
-	<p>
-		<h1 style="font-family: 'Satisfy', cursive;">Hey! Thank You for stopping by.</h1>
-		<p style="font-family: 'Cuprum', sans-serif;">
-			I am pursuing my Masters in Computer Science at San Diego State University, San Diego, California. I worked as a Senior Engineer at Samsung. I have graduated from NIT Allahabad, India with a Bachelor of Technology Degree in Computer Science and Engineering. I love to develop software and websites which can be used to solve real world problems. I am also interested in solving algorithmic problems. In a nutshell, I have a proclivity towards Computer Science and Technology and like to create and play with ideas.Other than that, I read, play computer games, listen to music, travel and sometimes write for recreation.
-		</p>
-	</p>
-<a href="https://drive.google.com/file/d/1vEW4Buy61jb31A5Gd_yV1U7GBlhRjbaX/view" style="cursor: pointer;font-family:sans-serif;" target="_blank" class="dr">
-	View Resume
-</a>
-</div>
 
-<div id="contact">
-	<table>
-	<tr>
-		<td><a href="mailto:jharajan20@gmail.com" target="_blank" title="Email"><img src="email.png"></td>
-	</tr>
-	<tr>
-		<td><a href="https://www.linkedin.com/in/iamrajanjha" target="_blank"  title="Linkedin"><img src="linkedin.png"></td>
-	</tr>
-	<tr><td><a href="https://www.github.com/iamrajanjharj" target="_blank" title="Github"><img src="github.png"></td></tr>
-	</table>
-</div>
-	
+<body>
+    <div id="particles-js">
+        <div class="header">
+            <h1>
+                <div class="typing-container">
+                <span id = "feature-text" class="site-title tlt" ></span>
+                <span class="input-cursor"></span>
+                </div>
+                <span class="site-description tlt-word" data-in-effect="fadeInLeft">Software Engineer • Web Developer • An Optimist</span>
+            </h1>
+            <div class="header-icons">
+                <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/iamrajanjha">
+                    <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a aria-label="My Github Profile" target="_blank" href="https://www.github.com/iamrajanjharj">
+                    <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+                </a>
+                <!-- <a aria-label="My Résumé" target="_blank" href="#">
+                    <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                </a> -->
+                <a aria-label="Send Email" href="mailto:jharajan20@gmail.com" target="_blank">
+                    <i class="icon fa fa-envelope"></i>
+                </a>
+            </div>
+            <div class="header-links">
+                <button class="btn-1">
+                    <a class="link" href="#about" data-scroll>About Me</a>
+                </button>
+                <div class="spacer"></div>
+                <button class="btn-1">
+                    <a class="link" target="_blank" href="https://drive.google.com/file/d/1vEW4Buy61jb31A5Gd_yV1U7GBlhRjbaX/view">Resume</a>
+                </button>
+                <div class="spacer"></div>
+                <button class="btn-1">
+                    <a class="link" href="#projects" data-scroll>Projects</a>
+                </button>
+            </div>
+        </div>
+        <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
+
+    <section id="about">
+        <div class="user-details">
+            <h1>About Me</h1>
+            <picture>
+                <source type="image/webp"
+                        srcset="./assets/img/webp/rajanjha.webp"
+                        alt="Rajan Jha"
+                        width="30%"
+                        style="border-radius: 50%" />
+                <img src="./assets/img/jpg/rajanjha.jpeg"
+                     alt="Rajan Jha"
+                     width="30%"
+                     style="border-radius: 50%" />
+            </picture>
+            <p>
+                I am pursuing my Masters in Computer Science at San Diego State University, San Diego, California. 
+                I worked as a Senior Engineer at Samsung. I have graduated from NIT Allahabad, India with a Bachelor of Technology Degree in Computer Science and Engineering. 
+                I love to develop software and websites which can be used to solve real world problems. 
+                I am also interested in solving algorithmic problems. In a nutshell, I have a proclivity towards Computer Science and Technology and like to create and play with ideas.
+                Other than that, I read, play computer games, listen to music, travel and sometimes write for recreation.
+                <br/> 
+                <strong class="blink">Feel free to get in touch if you want to work with me !!!</strong>                           
+            </p>
+        </div>
+
+        <div class="user">
+            <div class="tech">
+                <h2>Languages</h2>
+                <i class="devicon-typescript-plain colored"></i>
+                <i class="devicon-java-plain-wordmark colored"></i>
+                <i class="devicon-csharp-plain colored"></i>
+                <i class="devicon-c-plain colored"></i>
+                <i class="devicon-cplusplus-plain colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+            </div>
+
+            <div class="tech">
+                <h2>Front-End</h2>
+                <i class="devicon-react-original colored"></i>
+                <i class="devicon-dot-net-plain colored"></i>
+                <i class="devicon-sass-plain colored"></i>
+                <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+            </div>
+
+            <div class="tech">
+                <h2>Back-End</h2>
+                <i class="devicon-typescript-plain colored"></i>
+                <i class="devicon-dot-net-plain colored"></i>
+                <i class="devicon-nodejs-plain colored"></i>
+                <i class="devicon-express-original-wordmark colored"></i>
+                <i class="devicon-mysql-plain colored"></i>
+                <i class="devicon-postgresql-plain-wordmark colored"></i>
+            </div>
+
+            <div class="tech">
+                <h2>Tools</h2>
+                <i class="devicon-dot-net-plain colored"></i>
+                <i class="devicon-visualstudio-plain colored"></i>
+                <i class="devicon-git-plain-wordmark colored"></i>
+                <i class="devicon-vscode-plain colored"></i>
+                <i class="devicon-github-original colored"></i>
+                <i class="devicon-docker-plain-wordmark colored"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="user-details">
+            <h1>Featured Projects</h1>
+        </div>
+
+        <!-- <div class="user-projects">
+            <div class="images-right">
+                <picture>
+                    <source type="image/webp" srcset="./assets/img/webp/ClientServerChat.webp" alt="Client Server Chat" />
+                    <img alt="Client Server Chat" src="./assets/img/jpg/ClientServerChat.jpg" />
+                </picture>
+            </div>
+            <div class="contents" style="text-align: center">
+                <h3>Client Server Chat</h3>
+                <div>
+                    <img height="50"
+                         width="50"
+                         src="https://unpkg.com/simple-icons@3.4.0/icons/java.svg"
+                         style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%)" />
+                    &nbsp;
+                    <img height="50" width="50" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+                </div>
+                <p>
+                    I developed this multi-feature chat application which allows text, image, audio, video, and all other types data sharing between two or more clients.
+                </p>
+                <a class="project-link" target="_blank" href="https://github.com/amrit5joshi/CLIENT_SERVER_CHAT">Check it out!</a>
+            </div>
+        </div> -->
+
+        <div class="user-projects">
+            <div class="images-left">
+                <picture>
+                    <source type="image/webp" srcset="./assets/img/webp/MnnitAsks.webp" alt="MnnitAsks" />
+                    <img alt="MnnitAsks" src="./assets/img/jpg/MnnitAsks.jpg" />
+                </picture>
+            </div>
+            <div class="contents-right" style="text-align: center">
+                <h3>MnnitAsks</h3>
+                <img height="50"
+                     width="50"
+                     src="https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg"
+                     style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)" />
+                &nbsp;
+                <img height="50"
+                     width="50"
+                     src="https://unpkg.com/simple-icons@3.4.0/icons/css3.svg"
+                     style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)" />
+                &nbsp;
+                <img height="50" width="50" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+                <p>
+                    I created this website with one of my friends, Rajan Jha. It was a question and answer website with all the basic functionality to ask, answer, upvote, downvote, bookmark questions and answer. The project got third position in Webster 2018 in Avishkar, the annual techno-management fest of MNNIT, ALLAHABAD.
+                </p>
+                <a class="project-link" target="_blank" href="https://github.com/iamrajanjharj/MnnitAsks">Check it out!</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; Rajan Jha, 2023</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./assets/js/sweet-scroll.min.js"></script>
+    <script src="./assets/js/google-analytics.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/jquery.lettering.js"></script>
+    <script src="./assets/js/jquery.texillate.js"></script>
+    <script src="./assets/js/customScript.js"></script>
+    <script>
+        $(document).ready( function () {
+          $('.tlt-word').textillate({
+                initialDelay: 1700,
+                in: {
+                    delay: 400
+                },
+                type: 'word'                    
+            });
+        });
+    </script>
 </body>
 </html>
