@@ -1,0 +1,22 @@
+ good = one1 + two2 - three3 / four4 ;  
+ good = one1 / two2 * three3 ;  
+ good = one1 * two2 + three3 ;  
+ good = ONE + twenty - three3 ;  
+ good = old * thirty2 / b567 ;  
+ good * i8766e98e + bignum  
+ good % a4 + bignum  
+ good * one - two2 / three3  
+ good = four4 * two2 * three3 ;   
+ good * (one + two) * three  
+ good * one + two * three / four - five + six  
+ good * one - two2 / three3  
+ bad = = one1 + two2 - three3 / four4 ;  
+ bad = one1 + two2 - three3 / four4  
+ bad = 1 + - two2 - three3 / four4 ;  
+ bad = one1 + two2 ? three3 / four4 ;  
+ bad = one1 + 24 - three3 :  
+ bad +- delta  
+ bad + - delta  
+ bad / min = fourth ;  
+ bad = a ! b  
+ bad * 2two + 3three  
